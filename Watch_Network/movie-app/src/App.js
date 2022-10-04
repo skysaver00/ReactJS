@@ -6,10 +6,9 @@ function App() {
   const [counter, setValue] = useState(0);
   const onClick = () => setValue((prev) => prev + 1);
   console.log("i run all the time");
-  const iRunOlyOnce = () => {
-    console.log("i run only once.");
-  }
-  useEffect(iRunOlyOnce, []);
+  useEffect(() => {
+    console.log("CALL THE API.......")
+  }, [])
   return (
     <div className="App">
       <h1 className={styles.title}>Welcome Back!!</h1>
